@@ -1,0 +1,124 @@
+/* RajiHomeTuition.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    color: #fff;
+}
+
+/* Smooth Flowing Gradient Animation */
+@keyframes textFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Apply Smooth Gradient Effect */
+.hero-title, 
+.section-title, 
+.link {
+    background: linear-gradient(90deg, black, #ffaf7b, black);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textFlow 4s ease-in-out infinite;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #ffaf7b;
+    text-underline-offset: 8px;
+}
+
+/* List */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Steps */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.step {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Courses */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section .text {
+    font-size: 1.1rem;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
